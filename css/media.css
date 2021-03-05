@@ -2,18 +2,38 @@
   .menu__list {
     display: block;
     width: 100%;
-    transform: translateY(-250%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    transform: translateY(-150%);
+    transition: all .5s;
+  }
+  .menu__list--active{
+    transform: translateY(0%);
+    transition: all .4s;
   }
   .menu__list-item {
     margin-left: 0px;
     text-align: center;
+    padding-bottom: 20px;
+  }
+  .header__top-link{
+    z-index: 100;
+    color: #ffff;
+  }
+  .menu__btn{
+    z-index: 100;
   }
   .header__top {
-    padding-top: 0px;
+    padding-top: 45px;
+    align-items: flex-start;
+    margin-bottom: 0px;
   }
   .header__content {
     width: 100%;
-    padding-top: 0;
+    padding-top: 110px;
     padding-left: 0;
   }
   .header__content-inner {
